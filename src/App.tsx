@@ -3,19 +3,6 @@ import './App.scss';
 import React, { useCallback, useState } from 'react';
 import classNames from 'classnames';
 
-export const goodsFromServer: Goods[] = [
-  'Dumplings',
-  'Carrot',
-  'Eggs',
-  'Ice cream',
-  'Apple',
-  'Bread',
-  'Fish',
-  'Honey',
-  'Jam',
-  'Garlic',
-];
-
 type Goods =
   | 'Dumplings'
   | 'Carrot'
@@ -33,6 +20,19 @@ enum SortType {
   Alphabet = 'alphabet',
   Length = 'length',
 }
+
+export const goodsFromServer: Goods[] = [
+  'Dumplings',
+  'Carrot',
+  'Eggs',
+  'Ice cream',
+  'Apple',
+  'Bread',
+  'Fish',
+  'Honey',
+  'Jam',
+  'Garlic',
+];
 
 function getPreparedGoods(
   goods: Goods[],
